@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpModule } from '@angular/http';
+
 // Services
 import { InformacionService } from './services/informacion.service';
 
@@ -24,7 +26,8 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [InformacionService],
   bootstrap: [AppComponent]
