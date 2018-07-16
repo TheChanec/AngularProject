@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Services
+import { InformacionService } from './services/informacion.service';
+
+// Pages
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -22,7 +26,7 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [InformacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
