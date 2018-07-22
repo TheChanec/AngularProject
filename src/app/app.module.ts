@@ -13,7 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app.routes';
 
 @NgModule({
   declarations: [
