@@ -4,13 +4,18 @@ import { RouterModule, Routes } from '@angular/router';
 import {
   PortafolioComponent,
   ProductoComponent,
-  AboutComponent
+  AboutComponent,
+  LoginComponent
 } from './components/index.paginas';
 
 const routes: Routes = [
   {
     path: '',
      component: PortafolioComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'producto/:id',
