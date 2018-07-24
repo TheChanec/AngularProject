@@ -1,7 +1,14 @@
-<app-header>
+<div *ngIf="authentication">
+    <app-header></app-header>
+    <section class="ae-container-fluid rk-main">
+        <router-outlet></router-outlet>
+    </section>
+    <app-footer></app-footer>
+</div>
 
-</app-header>
-<section class="ae-container-fluid rk-main">
-    <router-outlet></router-outlet>
-</section>
-<app-footer></app-footer>
+
+
+
+<div *ngIf="!authentication">
+    <app-login></app-login>
+</div>
