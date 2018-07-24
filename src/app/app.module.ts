@@ -14,6 +14,7 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AppRoutingModule } from './app.routes';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app.routes';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ProductoComponent
+    ProductoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
