@@ -7,5 +7,8 @@ import { InformacionService } from '../../services/informacion.service';
 })
 export class HeaderComponent  {
   constructor(public _is: InformacionService) {}
+  buscarHeroe( heroe: string ) {
+    console.log(heroe);
+  }
 
 }
