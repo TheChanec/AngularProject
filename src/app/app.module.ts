@@ -15,6 +15,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AppRoutingModule } from './app.routes';
 import { LoginComponent } from './components/login/login.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { NetcoreComponent } from './components/netcore/netcore.component';
+import { InternalServerComponent } from './error-pages/internal-server/internal-server.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { LoginComponent } from './components/login/login.component';
     PortafolioComponent,
     AboutComponent,
     ProductoComponent,
-    LoginComponent
+    LoginComponent,
+    FormularioComponent,
+    NetcoreComponent,
+    InternalServerComponent
   ],
   imports: [
     BrowserModule,
