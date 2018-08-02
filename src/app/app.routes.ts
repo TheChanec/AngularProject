@@ -5,26 +5,19 @@ import {
   PortafolioComponent,
   ProductoComponent,
   AboutComponent,
-  LoginComponent
+  LoginComponent,
+  FormularioComponent,
+  InternalServerComponent
 } from './components/index.paginas';
 
 const routes: Routes = [
-  {
-    path: '',
-     component: PortafolioComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'producto/:id',
-     component: ProductoComponent
-  },
-  {
-    path: 'about',
-     component: AboutComponent
-  }
+  { path: '', component: PortafolioComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'producto/:id', component: ProductoComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'formulario', component: FormularioComponent },
+  { path: '500', component: InternalServerComponent },
+  { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
 
 @NgModule({
