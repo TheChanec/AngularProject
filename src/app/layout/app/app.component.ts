@@ -8,7 +8,9 @@ import { InformacionService } from '../../services/informacion.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public _is: InformacionService) {
+  authentication: boolean;
 
+  constructor(public _is: InformacionService) {
+    this.authentication = true;
   }
 }
