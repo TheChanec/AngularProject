@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Producto } from '../../models/producto.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portafolio',
@@ -6,8 +8,17 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class PortafolioComponent  {
+  public productos: Producto[] = [];
+  constructor(private router: Router) {
+    this.productos = [
+      { id : '1' , name : 'el uno' },
+      { id : '2' , name : 'el dos' },
+      { id : '3' , name : 'el tres' }];
+   }
 
-  constructor() { }
-
+getProducto(id: string){
+    let productoUrl: string = `/producto/${id}`
+    this.router.navigate([productoUrl]);
+}
 
 }
