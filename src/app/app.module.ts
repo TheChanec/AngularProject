@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpModule } from '@angular/http';
 
@@ -18,6 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { NetcoreComponent } from './components/netcore/netcore.component';
 import { InternalServerComponent } from './error-pages/internal-server/internal-server.component';
+import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,14 +32,16 @@ import { InternalServerComponent } from './error-pages/internal-server/internal-
     LoginComponent,
     FormularioComponent,
     NetcoreComponent,
-    InternalServerComponent
+    InternalServerComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpModule
   ],
-  providers: [InformacionService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
