@@ -1,37 +1,22 @@
-<header class="ae-container-fluid ae-container-fluid--full rk-header ">
-    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
-    <label for="mobile-menu">
-    <svg>
-      <use xlink:href="assets/img/symbols.svg#bar"></use>
-    </svg>
-    <svg>
-      <use xlink:href="assets/img/symbols.svg#bar"></use>
-    </svg>
-    <svg>
-      <use xlink:href="assets/img/symbols.svg#bar"></use>
-    </svg>
-  </label>
-    <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo"><a routerLink="/">{{ _is.info.titulo }}<sup>tm</sup></a></h1>
-        <nav class="rk-navigation">
-            <ul class="rk-menu">
-                <li class="rk-menu__item"><a routerLink="/" class="rk-menu__link">Home</a>
-                </li>
-                <li class="rk-menu__item"><a routerLink="about" class="rk-menu__link">about us</a>
-                </li>
-                <li class="rk-menu__item"><a routerLink="producto" class="rk-menu__link">Producto</a>
-                </li>
-                <li class="rk-menu__item"><a routerLink="formulario" class="rk-menu__link">Formulario</a>
-                </li>
-            </ul>
-            <div class="rk-search">
-                <input type="text" placeholder="Search" id="urku-search" class="rk-search-field" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
-                <label for="urku-search">
-                  <svg>
-                    <use xlink:href="assets/img/symbols.svg#icon-search"></use>
-                  </svg>
-                </label>
-            </div>
-        </nav>
-    </div>
-</header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" routerLink="/">{{ _is.info.titulo }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="producto">producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="formulario">formulario</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
