@@ -1,11 +1,23 @@
-<section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-        <a *ngFor="let producto of productos" (click)="getProducto(producto.id)" class="rk-item ae-masonry__item">
-          <img src="assets/img/project-1.jpg" alt="">
-            <div class="item-meta">
-                <h2> {{ producto.name }} </h2>
-                <p>Branding</p>
+<main role="main">
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let producto of productos">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="" alt="Card image cap" (click)="getProducto(producto.id)">
+            <div class="card-body">
+              <p class="card-text">{{ producto.name }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-        </a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </div>
+</main>
