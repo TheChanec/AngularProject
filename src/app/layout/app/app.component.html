@@ -1,15 +1,8 @@
 <div *ngIf="authentication; else logintemplate">
     <app-header></app-header>
-
-              <router-outlet></router-outlet>
-
-
-
+    <router-outlet></router-outlet>
 </div>
 
-
-
 <ng-template #logintemplate>
-
     <app-login></app-login>
 </ng-template>
